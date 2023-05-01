@@ -30,7 +30,10 @@ public class App {
 //        System.out.println(courseService.getAllCourses());
 //        System.out.println(courseService.updateCourse(2L, new Course(
 //                "Java-9", LocalDate.of(2023, 1, 3))));
-
-
+//        System.out.println(instructorService.getInstructorsByCourseId(1L));
+//        System.out.println(instructorService.assignInstructorToCourse(2L, 3L));
+//        System.out.println(instructorService.getInstructorByName("Datka"));
+//        System.out.println(instructorService.getInstructorById(2L));
+instructorService.deleteInstructorById(3L);
     }
 }

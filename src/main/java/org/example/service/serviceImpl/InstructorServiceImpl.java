@@ -18,4 +18,29 @@ InstructorRepository instructorRepository = new InstructorRepositoryImpl();
     public List<Instructor> getAllInstructors() {
         return instructorRepository.getAllInstructors();
     }
+
+    @Override
+    public Instructor getInstructorById(Long id) {
+        return instructorRepository.getInstructorById(id);
+    }
+
+    @Override
+    public void deleteInstructorById(Long id) {
+instructorRepository.deleteInstructorById(id);
+    }
+
+    @Override
+    public String assignInstructorToCourse(Long instructorId, Long courseId) {
+        return instructorRepository.assignInstructorToCourse(instructorId, courseId);
+    }
+
+    @Override
+    public List<Instructor> getInstructorsByCourseId(Long courseId) {
+        return instructorRepository.getInstructorsByCourseId(courseId);
+    }
+
+    @Override
+    public Instructor getInstructorByName(String name) {
+        return instructorRepository.getInstructorByName(name);
+    }
 }
